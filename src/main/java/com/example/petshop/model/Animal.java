@@ -11,18 +11,15 @@ public class Animal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nome;
     private String especie;
     private String raca;
     private Integer idade;
     private String status;
 
-    // Construtor vazio (obrigatório para o JPA)
     public Animal() {
     }
 
-    // Construtor completo
     public Animal(String nome, String especie, String raca, Integer idade, String status) {
         this.nome = nome;
         this.especie = especie;
@@ -31,7 +28,6 @@ public class Animal {
         this.status = status;
     }
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
